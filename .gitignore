@@ -1,8 +1,8 @@
 
 #Ignore all files from DesignPattern folder except src folder
 
-Digital/*
+#Digital/*
 Electronic/*
-Embedded-Linux-Board/*
+#Embedded-Linux-Board/*
 Processors/*
 .gitignore
