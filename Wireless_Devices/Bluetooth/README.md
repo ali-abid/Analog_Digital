@@ -1,12 +1,18 @@
 
 
-All about Bluetooth
+-All about Bluetooth
 
 https://learn.sparkfun.com/tutorials/bluetooth-basics/how-bluetooth-works
 
 
-Bluetooth Arduino Modules
+-Bluetooth Arduino Modules
+
 http://www.cooking-hacks.com/let-s-cook/fritzing-libraries 
 
-Bluetooth Protocol 
+-Bluetooth Protocol 
+
 https://learn.sparkfun.com/tutorials/bluetooth-basics/how-bluetooth-works 
+
+-Wireless comparison
+
+https://learn.sparkfun.com/tutorials/bluetooth-basics/all 
