@@ -25,10 +25,11 @@ function handler (req, res) {
   });
 }
 
+
 b4.watch(function(err, value) {
     if (err) exit();
     io.sockets.emit('b4', {v:value});
-    echo('inside b4 function');
+	echo('inside b4 function');
     exec('espeak -v en "Button 4"');
     exec('espeak -v en "Right Leg"');
 });
@@ -45,18 +46,16 @@ b2.watch(function(err, value){
 	if (err) exit();
 	io.sockets.emit('b2' , {v:value});
 	echo('inside b2 function');
-    exec('espeak -v en "Button 4"');
+    exec('espeak -v en "Button 2"');
     exec('espeak -v en "Right Hand"');
-
 });
 
 b1.watch(function(err, value){
 	if (err) exit();
 	io.sockets.emit('b1' , {v:value});
 	echo('inside b1 function');
-    exec('espeak -v en "Button 4"');
+    exec('espeak -v en "Button 1"');
     exec('espeak -v en "Left Hand"');
-
 });
 
 function exit() {
