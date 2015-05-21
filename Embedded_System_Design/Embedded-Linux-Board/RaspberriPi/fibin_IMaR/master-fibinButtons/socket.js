@@ -1,4 +1,5 @@
-
+require('shelljs/global');
+echo('Inside socket.js');
 var app = require('http').createServer(handler)
   , io = require('socket.io').listen(app)
   , fs = require('fs')
@@ -24,25 +25,38 @@ function handler (req, res) {
   });
 }
 
-
 b4.watch(function(err, value) {
     if (err) exit();
     io.sockets.emit('b4', {v:value});
+    echo('inside b4 function');
+    exec('espeak -v en "Button 4"');
+    exec('espeak -v en "Right Leg"');
 });
 
 b3.watch(function(err, value){
 	if (err) exit();
 	io.sockets.emit('b3', {v:value});
+	echo('inside b3 function');
+	exec('espeak -v en "Button 3"');
+	exec('espeak -v en "Left Leg"');
 });
 
 b2.watch(function(err, value){
 	if (err) exit();
 	io.sockets.emit('b2' , {v:value});
+	echo('inside b2 function');
+    exec('espeak -v en "Button 4"');
+    exec('espeak -v en "Right Hand"');
+
 });
 
 b1.watch(function(err, value){
 	if (err) exit();
 	io.sockets.emit('b1' , {v:value});
+	echo('inside b1 function');
+    exec('espeak -v en "Button 4"');
+    exec('espeak -v en "Left Hand"');
+
 });
 
 function exit() {
