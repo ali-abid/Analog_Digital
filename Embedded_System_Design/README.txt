@@ -1,3 +1,6 @@
+Link 
+http://users.ece.utexas.edu/~valvano/arm/outline1.htm 
+
 #Architecture Design
 
 #Micro-contorller / Micro-processor Selection
@@ -62,3 +65,9 @@ Author: https://www.linkedin.com/pub/gitu-jain/4/839/b69
 
 Parallel computing
 https://computing.llnl.gov/tutorials/parallel_comp/ 
+
+mbed Platform
+https://developer.mbed.org/platforms/ 
+
+Micro-Controller Manufacture List
+http://en.wikipedia.org/wiki/List_of_common_microcontrollers
