@@ -38,6 +38,8 @@
 
 <script src="/socket.io/socket.io.js"></script>
 <script>
+require('shelljs/global');
+echo('Inside socket.js');
   var socket = io.connect();
 
   var toggle = function(node, val) {
@@ -62,6 +64,9 @@
   socket.on('b4', function(data) {
     var d = document.getElementById("b4");
     toggle(d, data.v);
+	echo('inside b4 function');
+    exec('espeak -v en "Button 4"');
+    exec('espeak -v en "Right Leg"');
   });
 </script>
 </html>
