@@ -1,0 +1,2295 @@
+@charset "utf-8";
+/* CSS Document */
+/* ------------------------------
+Version: 1.00
+Date Modified: 11/03/2009
+-------------------------------*/
+html {
+	overflow-y: scroll;
+}
+
+body {
+	min-width: 900px;
+	border: 0;
+	font: 11px/13px  "Arial", "Helvetica", Sans-Serif;
+	font-size: 100%;
+	
+}
+								/* (InvenSenseBlue=#0b1c52) (InvenSenseRed=#a32318),(greyorange=#ead2b5)*/
+a                           { outline: none; text-decoration: none; color: #0066CC; }	
+a:hover						{ color: #a32318; }					
+h1, h2		                { font: 12px "Arial","Helvetica",Sans-Serif; color:#a32218; margin: 5px 0 15px 30px;  }
+h1                          { font-size: 18px; font-weight: normal; text-indent: 0px; color:#a32218; margin: 5px 0 20px 0px; }
+h2                          { color: #00325b; font-size: 15px; font-weight:bold; font-style:italic; margin: 0px 0 5px 0px; }
+h2 a, h2 a:visited          { color: #00325b; text-decoration:none; }
+h2 a:hover                  { color: #00325b;  text-decoration:underline;}
+h3							{ color: #00325b; font: 13px "Arial", "Helvetica", Sans-Serif;
+							font-weight: bolder;  text-decoration: none; margin: 0 0 0 0; }
+h3 a                        { color: #00325b; text-decoration: none; margin: 0 0 0 0;  }
+h3 a:hover					{ color: #00325b; text-decoration: underline; margin: 0 0 0 0; }
+img {border:0;}
+p, li, dd                   { font: 11px/13px  "Arial", "Helvetica", Sans-Serif; text-align: left; margin: 0 0 0 0; }
+p#disclaimer				{ font-size: 10px; color: #555555 }
+h4							{ color: #0b1c52; font: 16px "Arial", "Helvetica", Sans-Serif; 
+							font-weight: bold; line-height:22px; margin-bottom:10px; position:relative; top:-20px;}
+h4 a						{ color: #0b1c52; text-decoration: none; }
+li.jobs						{ color: #0b1c52; font: 12px "Arial", "Helvetica", Sans-Serif; }
+h3.faq						{ display: inline; font: 13px "Arial", "Helvetica", Sans-Serif; font-weight: bolder; }
+p.faq						{ display: inline; font: 12px "Arial", "Helvetica", Sans-Serif; }
+form						{ margin: 0 0 0 0; }
+h1.catalogtitle {margin:0px 0px 3px 10px;}
+.dates						{ color: #0b1c52; font: 12px "Georgia", serif; font-weight: bold; }
+a.catalogtitle {color:#a32218; font-size:15px;}
+a.catalogtitle:hover{text-decoration:underline;}
+
+
+
+table {
+	margin:0;
+	padding:0;
+	font-size:12px;
+	text-align:center;
+}
+
+table.catalog {border-left: solid #ccc 1px;border-right: solid #ccc 1px; width:845px; border-spacing:0px;
+}
+
+table.justr {
+	text-align:right;
+	margin-top:0em;
+	font-size:12px;
+}
+
+th, td {
+	border-bottom:0px; 
+	border-color:#bbbbbb;
+	font: 10px/13px  "Arial", "Helvetica", Sans-Serif;
+	text-decoration: none;
+}
+
+th {   
+	border-bottom: solid #333333 1px; 
+	border-right: solid #FFFFFF 1px; 
+	background-color: #ccc; 
+	font-weight:bolder; 
+	height: 36px; 
+	line-height: 9px;
+	min-width: 40px; 
+}
+
+th.last {   
+	border-right: solid #FFFFFF 0px; 
+	border-bottom: solid #333333 1px; 
+	background-color: #ccc; 
+	font-weight:bolder; 
+	height: 36px; 
+	line-height: 9px;
+	min-width: 40px; 
+}
+
+td#divider {
+	background: #cccccc;
+	background-position: 0px -399px;
+	height: 0px;
+}
+
+td {	
+	border-bottom: 0px;
+	border-bottom-color:#000
+}
+
+td a{   
+	text-decoration: none; 
+}
+
+.catalog tr:hover { 
+background-color: #eee;
+}
+
+/*-------------------------------
+  GLOBAL NAVIGATION CONTAINER
+-------------------------------*/
+
+#gnav_container {
+	float: none;
+	margin:0 auto;
+	width: 890px;
+	padding: 0px;
+	clear: both;
+}
+
+/*-------------------------------
+		TOP NAVIGATION
+-------------------------------*/
+
+#uppernav {
+	width:635px;
+	margin-top: 7px;
+	margin-right:0px;
+	float:right;
+	text-align:right;
+	font-weight: normal;
+	font-size: 0.7em;
+	color: #838383; /* (InvenSenseBlue=#0b1c52) (InvenSenseRed=#a32318),(greyorange=#ead2b5)*/
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#uppernav a {
+	text-decoration: none;
+	color: #838383;
+}	
+
+#uppernav_container {
+		float:right;
+		margin: 0;
+		width:512px;
+}
+/*-------------------------------
+		HOME BUTTON / LOGO
+-------------------------------*/
+
+#gnavHomepage {
+	float: left;
+	display: inline;
+	padding: 0px;
+	margin-top: 12px;
+	margin-left: 0px;
+	margin-right: 20px;
+	list-style: none;
+	z-index: 5;
+}
+
+
+
+gnavHomepage li{
+	float: left;
+	display: inline;
+}
+	
+/*---Not active yet	
+
+#gnavHomepage li a{
+	display: block;
+	background: url(http://invensense.com/images/logo_small.png);
+	height:62px;
+	width:125px;	
+}
+
+#gnavHomepage li a:hover{
+	background: url(http://invensense.com/images/logo_small_hover.png);
+	height:62px;
+	width:125px;
+}
+
+#gnavHomepage li#Home_Hover {
+	background: url(http://invensense.com/images/logo_small.png);
+	height:62px;
+	width:125px;	
+}
+
+----*/
+
+
+
+
+/*-------------------------------------------------------------------
+	                      MENUBAR NAVIGATION
+-------------------------------------------------------------------*/	
+#gnavMenu {
+	float: left;
+	position: relative; 
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	z-index: 5;
+	
+}
+
+#gnavMenu li{
+	float: left;
+	display: inline;
+	margin-top: 9px;
+		  
+}
+#gnavMenu li a{
+	display: block;
+	background: url(http://www.invensense.com/images/globalnavbg_dark.png );
+	background-position: 0px -224px;
+	height:28px;
+	width:109px;
+	text-decoration: none;
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bolder;
+	color: #dddddd; /* (InvenSenseBlue=#0b1c52) (InvenSenseRed=#a32318),(greyorange=#ead2b5)*/
+	padding-top: 11px;
+}
+ 
+
+#gnavMenu li a:hover {
+	background: url(http://www.invensense.com/images/globalnavbg_dark.png );
+	background-position: 0px -139px;
+	height:28px;
+	width:109px;
+	
+}
+
+#gnavMenu li a:active {
+	background: url(http://www.invensense.com/images/globalnavbg_dark.png );
+	background-position: -30px -7px;
+	height:28px;
+	width:109px;
+}
+
+
+/*-------------------------------------------------------------------------
+								BUTTON Bar Start
+-------------------------------------------------------------------------*/
+#gnav_container #gnavMenu li#gnavStart {
+	background: url(http://www.invensense.com/images/globalnavbg_dark.png );
+	background-position: -15px -7px; 
+	height:39px;
+	width:12px; 
+}
+
+/*-------------------------------------------------------------------------
+								Products BUTTON
+-------------------------------------------------------------------------*/
+
+#gnav_container.Products #gnavMenu li#Products a {
+	background: url(http://www.invensense.com/images/globalnavbg_dark.png );
+	background-position: 0px -181px; 
+	color: #ffffff; /* (InvenSenseBlue=#0b1c52) (InvenSenseRed=#a32318),(greyorange=#ead2b5)*/
+	height:28px;
+	width:109px; 
+}
+
+/*-------------------------------------------------------------------------
+								Technology BUTTON
+-------------------------------------------------------------------------*/
+
+
+	 
+#gnav_container.Technology #gnavMenu li#Technology a {
+	background: url(http://www.invensense.com/images/globalnavbg_dark.png );
+	background-position: 0px -181px; 
+	color: #ffffff; /* (InvenSenseBlue=#0b1c52) (InvenSenseRed=#a32318),(greyorange=#ead2b5)*/
+	height:28px;
+	width:109px; 
+}/*-------------------------------------------------------------------------
+								Applications BUTTON
+-------------------------------------------------------------------------*/
+
+
+	 
+#gnav_container.Applications #gnavMenu li#Applications a {
+	background: url(http://www.invensense.com/images/globalnavbg_dark.png );
+	background-position: 0px -181px; 
+	color: #ffffff; /* (InvenSenseBlue=#0b1c52) (InvenSenseRed=#a32318),(greyorange=#ead2b5)*/
+	height:28px;
+	width:109px;
+}
+
+/*-------------------------------------------------------------------------
+								About BUTTON
+-------------------------------------------------------------------------*/
+
+
+	 
+#gnav_container.About #gnavMenu li#About a {
+	background: url(http://www.invensense.com/images/globalnavbg_dark.png );
+	background-position: 0px -181px; 
+	color: #ffffff; /* (InvenSenseBlue=#0b1c52) (InvenSenseRed=#a32318),(greyorange=#ead2b5)*/
+	height:28px;
+	width:109px; 
+}
+
+
+/*-------------------------------------------------------------------------
+								Support BUTTON
+-------------------------------------------------------------------------*/
+
+ 
+#gnav_container.Support #gnavMenu li#Support a {
+	background: url(http://www.invensense.com/images/globalnavbg_dark.png );
+	background-position: 0px -181px; 
+	color: #ffffff; /* (InvenSenseBlue=#0b1c52) (InvenSenseRed=#a32318),(greyorange=#ead2b5)*/
+	height:28px;
+	width:109px; 
+}
+
+/*-------------------------------------------------------------------------
+								Contact BUTTON
+-------------------------------------------------------------------------*/
+
+ 
+#gnav_container.Contact #gnavMenu li#Contact a {
+	background: url(http://www.invensense.com/images/globalnavbg_dark.png );
+	background-position: 0px -181px; 
+	color: #ffffff; /* (InvenSenseBlue=#0b1c52) (InvenSenseRed=#a32318),(greyorange=#ead2b5)*/
+	height:28px;
+	width:109px; 
+}
+	 
+/*------------------------------------------------------------------------
+	                           	Searh FIELD
+------------------------------------------------------------------------*/
+#gnav_container #gnavMenu li#gnavSearch {
+	font-size: 10px !important; 
+	display:block;
+	float: left;
+	border: none;
+	background: url(http://www.invensense.com/images/globalnavbg_dark.png );
+	background-position: 0px -49px;
+	height:10px;
+	width: 165px;
+}
+
+#gnav_container #gnavMenu #gnavSearch input {
+	border: 0;
+	font-size: 10px !important; 
+}
+
+ input.box {
+	color: #000000;
+	font-size: 10px !important; 
+	line-height: 8px;
+	vertical-align:super;
+	background: url(http://www.invensense.com/images/globalnavbg_dark.png );
+	background-position: -17px -59px;
+	border: 1px solid #888;
+	width: 80px;
+	height: 16px;
+	margin: 0px 0px 0px 8px;
+	padding:0px;
+	font-family: Arial, Helvetica, sans-serif;	
+}
+#gnav_container #gnavMenu #gnavSearch input.box:focus {
+	background: url(http://www.invensense.com/images/globalnavbg_dark.png );
+	font-size: 10px !important; 
+	border: 0;
+	outline: none;
+	background-position: -17px -59px;
+	
+}
+
+input.btn {
+	cursor: pointer;
+	background: url(http://www.invensense.com/images/search.png );
+	border: 1px solid #888;
+	margin: 0px 0px 0px 0px;
+	padding:0px 0px 3px 0px;
+	height:17px;
+	width:15px;
+}
+
+#gnav_container #gnavMenu #gnavSearch input.btn:hover {
+	background: url(http://www.invensense.com/images/globalnavbg_dark.png );
+	background-position: -121px -139px;
+	margin: 0px;
+	padding:0px;
+	height:12px;
+	width:23px;
+}
+
+input.btn:active {
+	background: url(http://www.invensense.com/images/search.png );
+	background-position: 1px 1px;
+}
+
+/*-------------------------------------------------------------------------
+								BUTTON Bar End
+-------------------------------------------------------------------------*/
+
+#gnav_container #gnavMenu li#gnavEnd {
+	background: url(http://www.invensense.com/images/globalnavbg_dark.png );
+	background-position: 0px -7px; 
+	height:39px;
+	width:12px; 
+}
+
+/*-------------------------------------------------------------------------
+	                          MenuGrapic Glow Bar
+-------------------------------------------------------------------------*/
+
+#gnav_container #gnavMenu li#gnavSubStart {
+	background: url(http://www.invensense.com/images/globalnavbg_dark.png );
+	background-position: 0px 0px; 
+	height:5px;
+	width:17px; 
+	margin-top: 0px;
+	clear:left;
+}
+
+#gnav_container #gnavMenu li#gnavSubMid {
+	background: url(http://www.invensense.com/images/globalnavbg_dark.png );
+	background-position: 0px -88px; 
+	background-repeat:repeat-x;
+	height:5px;
+	width:643px; 
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+#gnav_container #gnavMenu li#gnavSubEnd {
+	background: url(http://www.invensense.com/images/globalnavbg_dark.png );
+	background-position: -127px 0px; 
+	height:5px;
+	width:18px; 
+	margin-top: 0px;
+}
+
+/*-------------------------------------------------------------------------
+	                          MenuGrapic Glow Bar: end
+-------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------
+								SUB NAV GLOBAL ITEMS
+-------------------------------------------------------------------------*/
+
+#gnavMenu li ul {
+	float: left;
+	border: none;
+	display: none;
+	position:absolute;
+	background: url(http://invensense.com/images/subnavbg.png) repeat-x;
+	margin-top: 0px;
+	margin-left: 0px;
+	width: 720px;
+	left: 0;
+	z-index: 5;
+	background-position:0 0 !important;
+
+}
+
+#gnavMenu li ul li{
+	
+	width: auto;
+	display: inline;
+	float: left;
+}
+
+
+
+
+
+/* sub-menu Anchors */
+#gnavMenu li ul li a {
+	position:relative !important; /* ie Mac */
+	width: auto;
+	padding: 8px;
+	background: url(http://invensense.com/images/secondaryNavPipe.png) no-repeat top right;
+	text-decoration: none;
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bolder;
+	color: #3c4e7f; /*  ead2b5*/
+}
+
+#gnavMenu li ul li a:active {
+	
+	width: auto;
+	padding-top: 8px;
+		
+}
+ 
+#gnavMenu li ul li.last a {
+	background: none;
+}
+	
+
+
+#gnavMenu li a:hover ul {
+	color: #ead2b5; /* (InvenSenseBlue=#0b1c52) (InvenSenseRed=#a32318),(greyorange=#ead2b5)*/
+	height:0px;
+	
+	
+}
+/*-------------------------------------------------------------------------
+								SUB NAV Grouped ITEMS
+-------------------------------------------------------------------------*/
+
+/* position and z-index for the sub-menus */
+#gnavMenu li:hover ul,
+#gnavMenu li.msieFix ul {
+	display: inline; z-index:10
+}
+
+/* Current location - class on Body must match LI's id */
+.Products #gnavMenu li#Products a,
+.Applications #gnavMenu li#Applications a,
+.Technology #gnavMenu li#Technology a,
+.About #gnavMenu li#About a,
+.Support #gnavMenu li#Support a,
+.Contact #gnavMenu li#Contact a {
+	background: url(http://invensense.com/images/subnavbg.png) repeat-x;
+	height: 18px;
+}
+
+
+.Products #gnavMenu li#Products ul,
+.Applications #gnavMenu li#Applications ul,
+.Technology #gnavMenu li#Technology ul,
+.About #gnavMenu li#About ul,
+.Support #gnavMenu li#Support ul,
+.Contact #gnavMenu li#Contact ul {
+	margin-left: 0px;	
+	background: none;
+	height: 18px;
+	display: inline;
+	z-index:5:
+}
+
+/*non selected hover list attributes */
+#gnavMenu li#Applications ul li a:hover,
+#gnavMenu li#Products ul li a:hover,
+#gnavMenu li#Technology ul li a:hover,
+#gnavMenu li#About ul li a:hover,
+#gnavMenu li#Support ul li a:hover,
+#gnavMenu li#Contact ul li a:hover {
+	width: auto;
+	height: 18px;
+	background: url(http://invensense.com/images/secondaryNavPipe.png) no-repeat top right; 
+	color:#a32318;
+}
+
+/* current location */
+#gnav_container.Products #gnavMenu li#Products ul li,
+#gnav_container.Applications #gnavMenu li#Applications ul li,
+#gnav_container.Technology #gnavMenu li#Technology ul li,
+#gnav_container.About #gnavMenu li#About ul li,
+#gnav_container.Support #gnavMenu li#Support ul li,
+#gnav_container.Contact #gnavMenu li#Contact ul li {
+	background: url(http://invensense.com/images/secondaryNavPipe.png) no-repeat top right;
+	color: #7f87aa; /* (InvenSenseBlue=#0b1c52) (InvenSenseRed=#a32318),(greyorange=#ead2b5)*/
+	width: auto; 
+}
+
+/* current location list item atributes */
+#gnav_container.Products #gnavMenu li#Products ul li a,
+#gnav_container.Applications #gnavMenu li#Applications ul li a,
+#gnav_container.Technology #gnavMenu li#Technology ul li a,
+#gnav_container.About #gnavMenu li#About ul li a,
+#gnav_container.Support #gnavMenu li#Support ul li a,
+#gnav_container.Contact #gnavMenu li#Contact ul li a {
+	background: none;
+	color: #7f87aa; /* (InvenSenseBlue=#0b1c52) (InvenSenseRed=#a32318),(greyorange=#ead2b5)*/
+	width: auto;
+	height: 18px;
+}
+
+/* current location list item atribute Hovers */
+#gnav_container.Products #gnavMenu li#Products ul li a:hover,
+#gnav_container.Applications #gnavMenu li#Applications ul li a:hover,
+#gnav_container.Technology #gnavMenu li#Technology ul li a:hover,
+#gnav_container.About #gnavMenu li#About ul li a:hover,
+#gnav_container.Support #gnavMenu li#Support ul li a:hover,
+#gnav_container.Contact #gnavMenu li#Contact ul li a:hover {
+	background: url(http://invensense.com/images/secondaryNavPipe.png) no-repeat top right;
+	color: #a32318; /* (InvenSenseBlue=#0b1c52) (InvenSenseRed=#a32318),(greyorange=#ead2b5)*/
+	width: auto;
+	height: 18px;
+}
+
+/* Full Menu items remove pipe non specific page */
+#gnav_container #gnavMenu li#Products ul li.last,
+#gnav_container #gnavMenu li#Applications ul li.last,
+#gnav_container #gnavMenu li#Technology ul li.last,
+#gnav_container #gnavMenu li#About ul li.last,
+#gnav_container #gnavMenu li#Support ul li.last,
+#gnav_container #gnavMenu li#Contact ul li.last {
+	
+	background: none;
+}
+
+/* current location list item remove pipe */
+#gnav_container.Products #gnavMenu li#Products ul li.last a,
+#gnav_container.Applications #gnavMenu li#Applications ul li.last a,
+#gnav_container.Technology #gnavMenu li#Technology ul li.last a,
+#gnav_container.About #gnavMenu li#About ul li.last a,
+#gnav_container.Support #gnavMenu li#Support ul li.last a,
+#gnav_container.Contact #gnavMenu li#Contact ul li.last a {
+	background: none;
+}
+
+/* current location list item remove pipe on hover*/
+#gnavMenu li#Applications ul li.last a:hover,
+#gnavMenu li#Technology ul li.last a:hover,
+#gnavMenu li#Products ul li.last a:hover,
+#gnavMenu li#About ul li.last a:hover,
+#gnavMenu li#Support ul li.last a:hover,
+#gnavMenu li#Contact ul li.last a:hover {
+	background: none; 
+
+}
+
+/*-------------------------------------------------------------------------
+								SUB NAV PRODUCTS ITEMS
+-------------------------------------------------------------------------*/
+
+#gnav_container #gnavMenu li#Products ul li.lead {
+	background: none;
+	width: 0px;/*-----Spacer for submenu Location placement(both will be change to same number)-----*/
+	padding-right: 0px;
+}
+
+#gnav_container.Products #gnavMenu li#Products ul li.lead {
+	background: none;
+	width: 0px;/*-----Spacer for submenu Location placement(both will be change to same number)-----*/
+	padding-right: 0px;
+}
+
+/* Size of backdrop */
+#Products:focus,
+#gnavMenu li#Products ul,
+#gnav_container.Products #gnavMenu li#Products {
+	height: 36px;
+}
+
+
+/*-------------------------------------------------------------------------
+								SUB NAV TECHNOLOGY ITEMS
+-------------------------------------------------------------------------*/
+
+#gnav_container #gnavMenu li#Technology ul li.lead {
+	background: none;
+	width: 0px;/*-----Spacer for submenu Location placement(both will be change to same number)-----*/
+	padding-right: 0px;
+}
+
+#gnav_container.Technology#gnavMenu li#Technology ul li.lead {
+	background: none;
+	width: 0px;/*-----Spacer for submenu Location placement(both will be change to same number)-----*/
+	padding-right: 0px;
+}
+
+/* Size of clickabout nav */
+#Technology:focus,
+#gnavMenu li#Technology ul,
+.Technology #gnavMenu li#Technology {
+	height: 36px;
+}
+/*-------------------------------------------------------------------------
+								SUB NAV APPLICATIONS ITEMS
+-------------------------------------------------------------------------*/
+
+#gnav_container #gnavMenu li#Applications ul li.lead {
+	background: none;
+	width: 0px;/*-----Spacer for submenu Location placement(both will be change to same number)-----*/
+	padding-right: 0px;
+}
+
+#gnav_container.Applications #gnavMenu li#Applications ul li.lead {
+	background: none;
+	width: 0px;/*-----Spacer for submenu Location placement(both will be change to same number)-----*/
+	padding-right: 0px;
+}
+
+/* Size of clickabout nav */
+#Applications:focus,
+#gnavMenu li#Applications ul,
+.Applications #gnavMenu li#Applications {
+	height: 36px;
+}
+
+/*-------------------------------------------------------------------------
+								SUB NAV ABOUT ITEMS
+-------------------------------------------------------------------------*/
+
+#gnav_container #gnavMenu li#About ul li.lead {
+	background: none;
+	width: 0px;/*-----Spacer for submenu Location placement(both will be change to same number)-----*/
+	padding-right: 0px;
+}
+
+#gnav_container.About #gnavMenu li#About ul li.lead {
+	background: none;
+	width: 0px;/*-----Spacer for submenu Location placement(both will be change to same number)-----*/
+	padding-right: 0px;
+}
+
+/* Size of clickabout nav */
+#About:focus,
+#gnavMenu li#About ul,
+.About #gnavMenu li#About {
+	height: 36px;
+}
+
+/*-------------------------------------------------------------------------
+								SUB NAV SUPPORT ITEMS
+-------------------------------------------------------------------------*/
+
+#gnav_container #gnavMenu li#Support ul li.lead {
+	background: none;
+	width: 45px;/*-----Spacer for submenu Location placement(both will be change to same number)-----*/
+	padding-right: 0px;
+}
+
+#gnav_container.Support #gnavMenu li#Support ul li.lead {
+	background: none;
+	width: 45px;/*-----Spacer for submenu Location placement(both will be change to same number)-----*/
+	padding-right: 0px;
+}
+
+/* Size of clickabout nav */
+#Support:focus,
+#gnavMenu li#Support ul,
+.Support #gnavMenu li#Support {
+	height: 36px;
+}
+
+/*-------------------------------------------------------------------------
+								SUB NAV ABOUT ITEMS
+-------------------------------------------------------------------------*/
+
+#gnav_container #gnavMenu li#About ul li.lead {
+	background: none;
+	width: 20px;/*-----Spacer for submenu Location placement(both will be change to same number)-----*/
+	padding-right: 0px;
+}
+
+#gnav_container.Contact #gnavMenu li#About ul li.lead {
+	background: none;
+	width: 20px;/*-----Spacer for submenu Location placement(both will be change to same number)-----*/
+	padding-right: 0px;
+}
+
+/* Size of clickabout nav */
+#Contact:focus,
+#gnavMenu li#Contact ul,
+.Contact #gnavMenu li#Contact {
+	height: 36px;
+}
+
+/*-------------------------------------------------------------------------
+								SUB NAV CONTACT ITEMS
+-------------------------------------------------------------------------*/
+
+#gnav_container #gnavMenu li#Contact ul li.lead {
+	background: none;
+	width: 320px;/*-----Spacer for submenu Location placement(both will be change to same number)-----*/
+	padding-right: 0px;
+}
+
+#gnav_container.Contact #gnavMenu li#Contact ul li.lead {
+	background: none;
+	width: 320px;/*-----Spacer for submenu Location placement(both will be change to same number)-----*/
+	padding-right: 0px;
+}
+
+/* Size of clickabout nav */
+#Contact:focus,
+#gnavMenu li#Contact ul,
+.Contact #gnavMenu li#Contact {
+	height: 36px;
+}
+
+
+/*-------------------------------------------------------------------------
+							TICKER START
+-------------------------------------------------------------------------*/
+#subMenu {
+	list-style: none;
+	margin: 0;
+}
+
+#gnav_container.Home #subMenu li#NewsCenter  {
+	display: inline;
+	list-style: none;
+	margin-left: 1px;
+	margin-top: 4px;
+	float: left; 
+}
+
+#gnav_container.Home #subMenu li#NewsCenter  a{
+	display: block;
+	list-style: none;
+	background: url(http://invensense.com/images/newsticker.png);
+	background-position: -2px -1px;
+	height:29px;
+	width:67px;
+
+}
+
+#gnav_container.Home #subMenu li#NewsCenter a:hover {
+	display: inline;
+	background: url(http://invensense.com/images/newsticker.png);
+	background-position: -78px -30px;
+	height:29px;
+	width:67px;
+	float: left; 
+}
+
+
+#gnav_container.Home #subMenu li#NewsCenter a:active {
+	display: inline;
+	background: url(http://invensense.com/images/newsticker.png);
+	background-position: -1px -30px;
+	height:29px;
+	width:67px;
+	float: left; 
+}
+
+#gnav_container.Home #subMenu li#Headlines {
+	display: inline;
+	margin-top: 4px;
+	float: left; 
+}
+
+#gnav_container.Home #subMenu li#Headlines a {
+	display: block;
+	background: url(http://invensense.com/images/newsticker.png);
+	background-position: -72px -1px;
+	margin-top: 0px;
+	height:29px;
+	width:72px;
+	float: left; 
+}
+
+#gnav_container #subMenu li#Ticker {
+	display: none;
+	width:580px;
+			
+}
+
+#gnav_container.Home #subMenu li#Ticker {
+	display: inline;
+	margin-top: 4px;
+	padding: 0px;
+	border: 0px;
+	background: url(http://invensense.com/images/TickerBox.png) repeat-x;
+	width: 530px;
+	height:29px;
+	float: left; 
+}
+
+#gnav_container.Home #subMenu #field {
+	display: inline;
+	padding: 0px;
+	margin-top: 5px;
+	border: 0px;
+	font-style: normal;
+	font-weight: bold;
+	color: #555555; /* (InvenSenseBlue=#0b1c52) (InvenSenseRed=#a32318),(greyorange=#ead2b5)*/
+}
+
+#gnav_container.Home #subMenu li#field {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	color: #dddddd;
+	background: url(http://invensense.com/images/TickerBox.png) repeat-x;
+	height:29px;
+	float: left; 
+}
+
+#gnav_container.Home #subMenu li.last#Ticker {
+	display: block;
+	background: url(http://invensense.com/images/newsticker.png);
+	background-position: -142px -1px;
+	height:29px;
+	width: 12px;
+	float: left; 
+}
+
+
+
+/*-------------------------------------------------------------------------
+							LINE BREAK
+-------------------------------------------------------------------------*/
+#Lbreak_container {
+		clear:both;
+		margin-right: 20px;
+		width:900px;
+}
+/*-------------------------------------------------------------------------
+							PAGE CONTENT Start
+-------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------
+							DYNAMIC HEADER Start
+-------------------------------------------------------------------------*/
+#dheader_wrapper {
+	float: none;
+	margin: 0 auto;
+	padding: 0;
+	width: 860px;
+	list-style: none;
+	clear:both;
+}
+
+/*-------------------------------------------------------------------------
+							DYNAMIC HEADER end
+-------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------
+							BREAD CRUMBS Start
+-------------------------------------------------------------------------*/
+#crumbs_wrapper {
+	margin: auto;
+ 	width: 900px;
+	list-style: none;
+	clear:both;
+}
+	
+#crumbs { 
+	float: left;
+	margin-left: 25px;
+	margin-bottom:0px;
+	margin-top: 0px;
+	padding: 0px;
+ 	font-size: 0.8em;
+  	color: #555;
+	list-style: none;
+ 	padding: 0px;
+}
+
+#crumbs li#Pages { 
+	float:left;
+}
+
+#crumbs li#Pages a { 
+	float:left;
+	text-decoration: none;
+	color: #3b4c82;
+	font-weight: bolder;
+}
+
+
+#crumbs li#Pages a:hover { 
+	color: #a32318;
+}
+
+#crumbs li#Spacers {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	background: url(http://www.invensense.com/images/globalnavbcarrow.png );
+	height: 10px;
+	width: 18px;
+}
+
+
+/*-------------------------------------------------------------------------
+							BREAD CRUMBS end
+-------------------------------------------------------------------------*/
+	
+/*-------------------------------------------------------------------------
+							PAGE CONTENT START
+-------------------------------------------------------------------------*/
+
+#wrapper { 
+	float: none;
+	margin: 0 auto;
+	width: 900px;
+	clear:both;	
+}
+
+#wrapper_top_left {
+	float:left;
+	padding: 0px;
+	margin: 3px 0px 0px 0px;
+	background: url(http://invensense.com/images/borders.png);
+	background-position: 0px 0px;
+	height:20px;
+	width:30px;
+	clear:left;
+}
+
+#wrapper_top_mid {
+	float:left;
+	padding: 0px;
+	margin: 3px 0px 0px 0px;
+	background: url(http://invensense.com/images/borders_top.png) repeat-x;
+	height:20px;
+	width: 840px;
+}
+
+#wrapper_top_right {
+	float: left;
+	padding: 0px;
+	margin: 3px 0px 0px 0px;
+	background: url(http://invensense.com/images/borders.png);
+	background-position: -60px 0px;
+	height:20px;
+	width:30px;
+}
+
+
+#wrapper_sides { 
+ 	float: left;
+	padding: 0px;
+	margin: 0px;
+	background: url(http://invensense.com/images/borders_sides900.png);
+	background-position: 0px 0px;
+	width:900px;
+	clear:left;
+}
+
+
+#left {
+	float: left;
+ 	color: #333;
+ 	border: 0px;
+	background: none;
+	border: none;
+ 	margin: 0px 0px 0px 30px;
+ 	padding: 0px;
+	width: 170px;
+}
+
+
+#right {
+	float: left;
+ 	color: #333;
+ 	border: 0px;
+	background: none;
+ 	margin: 0px 0px 0px 30px;
+ 	padding: 0px;
+	width: 230px;
+}
+
+#middle {
+	float: left;
+	color: #333;
+ 	border: 0px;
+	background: none;
+ 	margin: 0px 15px 0px 15px;
+ 	padding: 0px;
+	width: 230px;
+	
+}
+
+
+#left_column { 
+	float: left;
+ 	color: #333;
+ 	border: 0px;
+	background: none;
+ 	margin: 0px 10px 0px 0px;
+ 	padding: 0px 10px 0px 0px;
+ 	width: 600px;
+	border-right: solid #bbb 1px;
+ 	
+}	
+
+#right_column { 
+	font-size: 9px;
+	float: left;
+ 	color: #333;
+	border: 0px;
+ 	padding: 0px 0px 0px 0px;
+ 	margin: 0px 0px 0px 0px;
+ 	width: 210px;
+ 
+}
+
+
+
+
+
+/* (InvenSenseBlue=#0b1c52) (InvenSenseRed=#a32318),(greyorange=#ead2b5)*/
+.standard p {
+	margin: 0 0 10px 0;
+	font-family: Georgia, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 21px;
+}
+
+.standard li {
+	font-family: Georgia, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	margin-bottom:5px;
+	margin-left: -10px;
+}
+
+ 	#right_column li{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 14px;
+	margin:0px 0px 5px -20px;
+}
+
+ 	#right_column p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 14px;
+	margin:0px 0px 5px 0px;
+}
+
+
+ 	.rightside {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	margin: 5px 0px 5px 0px;
+}
+
+	
+	#right_column h3 {
+		margin:5px 0 10px 0;
+font-size:13px;
+line-height:100%;
+	}
+
+
+.standard p a {
+	color: #0066CC;
+	font-weight:normal; 
+}
+
+.standard p a:hover {
+	color:#a32318 ;
+	font-weight:normal; 
+}
+
+.standard #newsitem a{
+	font-weight: normal; 
+}
+	 
+.standard {
+	float: left;
+	margin: 0px 10px 10px 25px;
+	padding: 0;
+	width:840px;
+	clear:left;
+}
+
+h3.standard #right_side {
+font-size: 100px;
+}
+
+.standard2 {margin: 0px;padding: 0px;}
+
+.container {
+	float:none;
+	margin: auto;
+	clear:left;
+}
+
+.discriptor {
+	float:right;
+	margin: 0.5em 0 0.5em 0.8em;  
+	font-size:12.5px;
+	font-style:italic;
+	color:#990000;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.picture {
+	padding: 0px;
+	font-style: italic;
+	color:#555555;
+}
+
+.right {
+	margin: 0.5em 0 0.5em 0.8em; 
+	float:right; 
+}
+
+.right2 {
+	margin: 0; 
+	float:right; 
+}
+
+.left { 
+	margin: 0.5em 0.8em 0.5em 0; 
+	float:left; 
+} 
+
+
+#wrapper_bottom_left {
+	float:left;
+	background: url(http://invensense.com/images/borders.png);
+	background-position: 0px -60px;
+	height:30px;
+	width:30px;
+	clear:left;
+}
+
+#wrapper_bottom_mid {
+	float:left;
+	background: url(http://invensense.com/images/borders_bottom.png) repeat-x;
+	height:30px;
+	width:840px;
+}
+
+#wrapper_bottom_right {
+	float: right;
+	background: url(http://invensense.com/images/borders.png);
+	background-position: -60px -60px;
+	height:30px;
+	width:30px;
+}
+
+.clear {
+	clear: both;
+}
+
+/*-------------------------------------------------------------------------
+							PRODUCTS CONTENT START
+-------------------------------------------------------------------------*/
+
+
+p.external a {
+	padding: 2px 0 2px 18px;
+	background-color: transparent;
+	background-image: url(../images/link.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 25%;
+}
+
+p.pdf a {
+	padding: 2px 0 2px 20px;
+	background-color: transparent;
+	background-image: url(../images/bg-icon-pdf.gif);
+	background-repeat: no-repeat;
+	background-position: 0 25%;
+}
+
+
+#axes {
+	clear: left;
+	display: block;
+	float: left;
+	background-position: -228px -60px;
+	background-image:url(http://invensense.com/images/productbox5.png);
+	height: 325px;
+    width:14px;
+}
+
+
+
+.key {
+	float: left;
+	display: inline;
+	background-image:none;
+	background-position: 0px -376px;
+	height: 18px;
+	font: 10px Arial, Helvetica, Lucida Grande, Sans-Serif;
+	margin-top: 3px;
+	margin-left: 4px;
+	
+}
+	
+	
+
+#keyyellow {
+	float: left;
+	display: inline;
+	background-image:url(http://invensense.com/images/productbox5.png);
+	background-position: 0px -376px;
+	height: 17px;
+	width: 22px;
+}
+
+#keyred {
+	float: left;
+	display: inline;
+	background-image:url(http://invensense.com/images/productbox5.png);
+	background-position: -26px -376px;
+	height: 17px;
+	width: 22px;
+}
+
+#keyblue {
+	float: left;
+	display: inline;
+	background-image:url(http://invensense.com/images/productbox5.png);
+	background-position: -52px -376px;
+	height: 17px;
+	width: 22px;
+}
+
+.productchart {
+	float: left;
+	width: 900px;
+}
+
+.productMenu {
+	float: left;
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	z-index: 5;
+	
+}
+
+.productMenu li {
+	float: left;
+	display: inline;
+	margin-top: 3px;
+	height:73px;
+	width:110px;
+	padding-top: 0px;
+	text-align: center;
+}
+
+.productMenu li.text a {
+	font-size: 12px;
+	font-weight: bolder;
+	float: left;
+	display: inline;
+	margin-top: 28px;
+	height:73px;
+	width:60px;
+	padding-top: 0px;
+	text-align: center;
+}
+
+.productMenu li.noitem {
+	display: block;
+	background: url(http://invensense.com/images/productbox5.png);
+	background-position: 0px -73px;
+	height:73px;
+	width:110px;
+	margin-top: 3px;
+}
+
+.productMenu li.title {
+	display: block;
+	background: #ffffff;
+	background-position: 0px -73px;
+	text-align: center;
+	height:30px;
+	width:110px;
+	border-bottom: solid 1px; 
+	border-bottom-color: #a32318;
+	padding-top: 0px;
+}
+
+
+
+.topicbutton a{
+	display: block;
+	background: url(http://invensense.com/images/productbox5.png);
+	background-position: -252px -425px;
+	height:25px;
+	width:138px;
+	text-decoration: none;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bolder;
+	color: #a32318; /* (InvenSenseBlue=#0b1c52) (InvenSenseRed=#a32318),(greyorange=#ead2b5)*/
+	padding-left: 10px;
+	padding-top:8px;
+}
+
+.topicbutton a:hover {
+	background: url(http://invensense.com/images/productbox5.png);
+	background-position: -252px -460px;
+	height:25px;
+	width:138px;
+}
+
+.topicbutton a:active {
+	background: url(http://invensense.com/images/productbox5.png);
+	background-position: -252px -392px;
+	height:23px;
+	width:138px;
+	padding-top: 10px;
+}
+
+/*-------Download Button---------*/
+.itemdownload a{
+	display: block;
+	background: url(http://invensense.com/images/productbox5.png);
+	background-position: 0px -425px;
+	height:25px;
+	width:138px;
+	text-decoration: none;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bolder;
+	color: #0b1c52; /* (InvenSenseBlue=#0b1c52) (InvenSenseRed=#a32318),(greyorange=#ead2b5)*/
+	padding-left: 10px;
+	padding-top:8px;
+}
+
+.itemdownload a:hover {
+	background: url(http://invensense.com/images/productbox5.png);
+	background-position: 0px -460px;
+	height:25px;
+	width:138px;
+}
+
+.itemdownload a:active {
+	background: url(http://invensense.com/images/productbox5.png);
+	background-position: 0px -392px;
+	height:23px;
+	width:138px;
+	padding-top: 10px;
+}
+
+/*-------Download Button---------*/
+
+/*--------yellow---*/
+
+.productMenu li.itemyellow a{
+	display: block;
+	background: url(http://invensense.com/images/productbox5.png);
+	background-position: 0px 1px;
+	height:67px;
+	width:110px;
+	text-decoration: none;
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bolder;
+	color: #a32318; /* (InvenSenseBlue=#0b1c52) (InvenSenseRed=#a32318),(greyorange=#ead2b5)*/
+	padding-top: 6px;
+}
+
+.productMenu li.itemyellow a:hover {
+	background: url(http://invensense.com/images/productbox5.png);
+	background-position: 0px -147px;
+	height:72px;
+	width:110px;
+}
+
+.productMenu li.itemyellow a:active {
+	background: url(http://invensense.com/images/productbox5.png);
+	background-position: 0px -222px;
+	height:64px;
+	width:110px;
+	padding-top: 8px;
+}
+
+/*------blue-----*/
+.productMenu li.itemblue a{
+	display: block;
+	background: url(http://invensense.com/images/productbox5.png);
+	background-position: -110px 1px;
+	height:67px;
+	width:110px;
+	text-decoration: none;
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bolder;
+	color: #a32318; /* (InvenSenseBlue=#0b1c52) (InvenSenseRed=#a32318),(greyorange=#ead2b5)*/
+	padding-top: 6px;
+}
+
+.productMenu li.itemblue a:hover {
+	background: url(http://invensense.com/images/productbox5.png);
+	background-position: -110px -147px;
+	height:72px;
+	width:110px;
+}
+
+.productMenu li.itemblue a:active {
+	background: url(http://invensense.com/images/productbox5.png);
+	background-position: -110px -72px;
+	height:64px;
+	width:110px;
+	padding-top: 8px;
+}
+
+/*--------red----*/
+
+
+
+.productMenu li.itemred a{
+	display: block;
+	background: url(http://invensense.com/images/productbox5.png);
+	background-position: 0px -298px;
+	height:67px;
+	width:110px;
+	text-decoration: none;
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bolder;
+	color: #a32318; /* (InvenSenseBlue=#0b1c52) (InvenSenseRed=#a32318),(greyorange=#ead2b5)*/
+	padding-top: 6px;
+}
+
+.productMenu li.itemred a:hover {
+	background: url(http://invensense.com/images/productbox5.png);
+	background-position: -110px -297px;
+	height:72px;
+	width:110px;
+}
+
+.productMenu li.itemred a:active {
+	background: url(http://invensense.com/images/productbox5.png);
+	background-position: -110px -222px;
+	height:64px;
+	width:110px;
+	padding-top: 8px;
+}
+
+/*-------------------------------------------------------------------------
+							PRODUCTS CONTENT END
+-------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------
+							PAGE CONTENT End
+-------------------------------------------------------------------------*/
+/*-------------------------------*/
+/* MISC CONTAINERS   (InvenSenseBlue=#0b1c52) (InvenSenseRed=#a32318),(greyorange=#ead2b5)*/
+/*-------------------------------*/
+
+#map {
+	float: right;
+	margin-top: -13px;
+}
+	
+
+#catalog_wrapper {
+	float: none;
+	font: Arial, Helvetica, sans-serif;
+	margin: 0 auto;
+	clear:both;	
+}
+
+#catalog {
+	
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	Width: 900px;
+	list-style: none;
+	z-index: 5;
+}
+
+	
+#catalog li{
+	font-size:10px;
+	margin-top: 0px;
+	margin-left: 5px;
+	
+}
+
+#catalog li a{
+	text-decoration: none;
+	color:#555555;
+	background: none;
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#catalog_wrapper #catalog #catalog_icons {
+	font-size:9px;
+	width: 290px;
+} 
+
+#catalog_wrapper #catalog li#catalog_icons {
+	font-size:9px;
+	float:left;
+} 
+
+#catalog_wrapper #catalog li#catalog_icons a{
+	background-image:url(../images/productbox5a.png);
+	background-position: -254px -1px;
+	height:107px;
+	width: 238px;
+	padding-top: 10px;
+	padding-right: 10px;
+	font-size:9px;
+	float:left;
+} 
+
+#catalog_wrapper #catalog li#catalog_icons a:hover {
+	background-image:url(../images/productbox5a.png);
+	background-position: -253px -236px;
+	height:107px;
+	width: 238px;
+	padding-top: 10px;
+	padding-right: 10px;
+	
+} 
+
+#catalog_wrapper #catalog li#catalog_icons a:active {
+	background-image:url(../images/productbox5a.png);
+	background-position: -254px -119px;
+	padding-top: 13px;
+	padding-right: 10px;
+	height:104px;
+	width: 238px;
+} 
+
+#catalog_wrapper #catalog #catalog_items {
+	font-size:10px;
+	width: 195px;
+} 
+
+#catalog_wrapper #catalog li#catalog_items {
+	font-size:10px;
+	float:left;
+} 
+
+
+/*---------------Tall Buttons---------------*/
+
+#catalog_wrapper #catalog #buttontall {
+	width: 214px;
+} 
+
+#catalog_wrapper #catalog li#buttontall {
+	float:left;
+} 
+
+#catalog_wrapper #catalog li#buttontall a{
+	background-image:url(http://invensense.com/images/productbox5.png);
+	background-position: -218px -497px;
+	height:252px;
+	width: 194px;
+	padding-top: 0px;
+	padding-right: 20px;
+	font-size:15px;
+	font: Arial, Helvetica, sans-serif;
+	font-weight:500;
+	float:left;
+} 
+
+#catalog_wrapper #catalog li#buttontall a:hover {
+	background-image:url(http://invensense.com/images/productbox5.png);
+	background-position: -1px -493px;
+	height:252px;
+	width: 194px;
+	padding-top: 0px;
+	padding-right: 20px;
+	
+} 
+
+#catalog_wrapper #catalog li#buttontall a:active {
+	background-image:url(/http://invensense.com/images/productbox5.png);
+	background-position: -433px -497px;
+	padding-top: 3px;
+	padding-right: 20px;
+	height:249px;
+	width: 194px;
+} 
+
+.standardbutton { 
+	width: 40px; 
+	padding:1px;
+	margin:1px;
+}
+
+.longbutton {
+	width: 95%;
+	padding:2px;
+}
+
+.longbutton2 {
+	padding:2px;
+}
+
+.longbutton3 {
+	width: 205px; 
+}
+
+.productbutton {
+width: 225px;
+background-color:#a32318;
+color:#fff;
+padding: 10px;
+margin-left:auto;
+margin-right:auto;
+text-align:center;
+border-radius: 5px;
+font-size:18px;
+font-family:georgia, serif;
+  border: 1px solid #900;
+}
+
+.productbutton:hover {
+  background-color: #c00;
+  position: 0 -3px;
+}
+
+
+.productbutton:active {
+  background-color: #900;
+  position: 0 -3px;
+}
+	
+
+/*-------------------------------
+  FOOTER NAVIGATION CONTAINER
+-------------------------------*/
+
+#fnav_container {
+		margin: 0 auto;
+		clear:both;
+		width:950px;
+}
+
+/*-------------------------------
+		Footer NAVIGATION
+-------------------------------*/
+
+
+
+
+#fnavMenu {
+	display: inline;
+	margin: 0 auto;
+	list-style: none;
+	
+	
+}
+
+#fnavMenu a	{
+	float: left;
+	display: inline;
+	text-decoration: none;
+	border: none;
+	padding:0 10px 0px 10px;
+	background:url(http://invensense.com/images/secondaryNavPipe.gif) no-repeat center right;
+	color: #838383;
+}
+	
+li#fnavMenu li a{
+	float: left;
+	display: block;
+	border: none;
+	text-decoration: none;
+	
+}
+
+li#fnavMenu a:hover {
+	color:#a21e13;
+	/* (InvenSenseBlue=#0b1c52) (InvenSenseRed=#a32318),(greyorange=#ead2b5)*/
+}
+	
+li#fnavMenu.last a{
+	background:none;
+	padding-right: 0px;
+}
+
+.spacer {
+	clear: both;
+	height: 15px;
+}
+
+
+#containerul, #containerul ul{
+  text-align:left;
+  margin:0; /* Removes browser default margins applied to the lists. */
+  padding:0; /* Removes browser default padding applied to the lists. */
+}
+ 
+#containerul li{
+  margin:0px 0 0 0px; /* A left margin to indent the list items and give the menu a sense of structure. */
+  padding:0; /* Removes browser default padding applied to the list items. */
+  list-style-type:none; /* Removes the bullet point that usually goes next to each item in a list. */
+  list: 
+}
+ 
+#containerul .symbols{ /* Various styles to position the symbols next to the items in the menu. */
+  float:left;
+  width:12px;
+  height:1em;
+  background-position:0 50%;
+  background-repeat:no-repeat;
+}
+
+#cse-search-results {
+	height: inherit;
+}
+
+/*-------------------------------
+		LightBox
+-------------------------------*/
+#video {
+	float: left;
+	margin: 5px;
+	display: inline;
+	vertical-align: middle;
+}
+
+
+#videotext {
+	float: left;
+	font-family: arial,sans-serif;
+	display: inline-block;
+	vertical-align: middle;
+	width: 450px;
+	margin-left:5px;
+}
+
+#videotext p {
+	font-family: arial,sans-serif;
+	font-size: 0.8em;
+	}
+
+
+.black_overlay{
+			display: none;
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			width: 100%;
+			height: 200%;
+			background-color: black;
+			z-index:500;
+			-moz-opacity: 0.85;
+			opacity:.85;
+			filter: alpha(opacity=85);
+}
+
+.white_content {
+			display: none;
+			position: fixed;
+			top: 50px;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+			text-align:center;
+			padding: 0px;
+			border: 0px;
+			background: url('screen.png');
+			z-index:501;
+			overflow: auto;
+			
+}
+
+/*-------------------------------
+		Add This Button(share)
+-------------------------------*/
+
+.addthis_toolbox.addthis_pill_combo a {
+    float: left;
+	z-index: 5000;
+}
+.addthis_button_compact .at15t_compact {
+	z-index: 5000;
+    float: left;
+}   
+
+/*-------------------------------
+developers' corner styles
+------------------------------*/
+
+#devnav {
+	position: relative;
+	top: -15px;
+	width: 860px;
+	height: 30px;
+	float:left;
+}
+
+#devnavleft {
+	width:150px;
+	float:left;
+}
+
+#devnavright {
+	width:40px;
+	float:left;
+}
+
+#devnavtabs {
+float:left;
+}
+
+#devnavwords {
+	width: 860px;
+	position:relative;
+	top: -35px;
+}
+
+#devnavwordsleft {
+	width: 150px;
+	float: left;
+}
+
+#devnavwordshome {
+	width: 128px;
+	float: left;
+}
+
+#devnavwordsknowledge {
+	width: 128px;
+	float: left;
+}
+
+#devnavwordsdownloads {
+	width: 128px;
+	float: left;
+}
+
+#devnavwordsforum {
+	width: 128px;
+	float: left;
+}
+
+#devnavwordssupport {
+	width: 128px;
+	float: left;
+}
+
+.devnavcenter {
+	text-align:center;
+	font-size: 11px;
+}
+
+/* media page indent */
+
+.mediadate p{
+
+	width: 70px;
+	height:50px;
+	margin: 0;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight:bold;
+float: left;
+clear:both;
+}
+
+.mediaheadline {
+margin-top:0px;
+	height:50px;
+	width: 560px;
+	float:none;
+	display:block;
+	
+}
+
+.mediaheadline p {
+margin:0;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.mediahide {
+display:none;
+}
+
+.newnew {
+	color: #FF0000;
+	font-weight: bold;
+}
+
+
+.rightsidep{
+	font-size: 90px;
+	line-height: 11px;
+}
+
+.pic {
+padding:3px;border:1px solid #ddd;margin-bottom:8px;
+}
+
+.pic img {
+border:0;
+}
+
+.pic p {
+font-family: arial, helvetica, "sans-serif";
+font-size: 10px;
+line-height: 11px;
+margin-bottom:3px;
+text-align:right;
+}
+
+.pic a {
+}
+
+.copywrite   {
+font-size: 11px;
+line-height: 11px;
+font-style: italic;
+}
+
+
+.left2 {
+	float: left;
+ 	color: #333;
+ 	border: 0px;
+	background: none;
+	border: none;
+ 	margin: 0px 6px 0px 0px;
+ 	padding: 0px;
+	width: 190px;
+}
+
+.left2 p{
+	font-family: verdana;
+	font-size: 11px;
+	line-height:13px;
+}
+
+.shopnow{
+	float:right;
+	position: relative;
+	top:-18px;
+}
+
+.hpb:hover {
+opacity:0.7;filter:alpha(opacity=70);
+}
+
+/* faq expansion */
+
+.trigger {
+	font: 13px "Arial", "Helvetica", Sans-Serif;
+	font-weight: bold;  
+	text-decoration: none; 
+	margin: 10px 0 0 30px;
+	padding: 0px 0 0 0px;
+	height: 15px;
+	display: block;
+}
+.trigger a {
+	text-decoration: none;
+	display: block;
+}
+.trigger a:hover { color: #c9c9c9; }
+.active {background-position: left bottom;} /*--When toggle is triggered, it will shift the image to the bottom to show its "opened" state--*/
+
+.toggle_container {
+	margin: 0 0 0px 45px;
+	padding: 0;
+	overflow: hidden;
+	width: 800px;
+	clear: both;
+}
+.toggle_container .block {
+	padding: 5px; /*--Padding of Container--*/
+	
+}
+
+#ticker01 {
+display:block !important;
+}
+
+.divenabled {
+width:275px;
+height:100px;
+margin:0 25px 10px 0;
+float:left;
+}
+
+.divenabled:hover { opacity:0.8; }
+
+.insideleft {
+font-size:10px;
+text-align:left;
+width:170px;
+}
+
+
+
+hr { height: 0px;
+}
+
+ul #down1 {
+	display:none;
+	}
+	
+ul.down:hover {visibility: visible;}
+
+
+/* Custom CSS Styles */
+
+@charset 'UTF-8';
+/* Starter CSS for Flyout Menu */
+#cssmenu {
+float:left;
+  padding: 0;
+  margin: 10px 0;
+  border: 0;
+  width: 675px;
+}
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu ul {
+  position: relative;
+  z-index: 597;
+  float: left;
+}
+#cssmenu ul li {
+  float: left;
+  min-height: 1px;
+  line-height: 1em;
+  vertical-align: middle;
+}
+#cssmenu ul li.hover,
+#cssmenu ul li:hover {
+  position: relative;
+  z-index: 599;
+  cursor: default;
+}
+#cssmenu ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 598;
+  width: 100%;
+}
+#cssmenu ul ul li {
+  float: none;
+}
+#cssmenu ul ul ul {
+  top: 1px;
+  left: 99%;
+}
+#cssmenu ul li:hover > ul {
+  visibility: visible;
+}
+#cssmenu ul ul {
+  top: 1px;
+  left: 99%;
+}
+#cssmenu ul li {
+  float: none;
+}
+#cssmenu ul ul {
+  margin-top: 1px;
+}
+#cssmenu ul ul li {
+  font-weight: normal;
+}
+/* Custom CSS Styles */
+#cssmenu:after,
+#cssmenu ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#cssmenu a {
+  color: #333333;
+  display: inline-block;
+  font-family: Verdana, sans-serif;
+  font-size: 11px;
+  font-weight:bold;
+  padding: 0 19px 0 9px;
+  text-align: left;
+  text-indent: 10px;
+  text-decoration: none;
+}
+
+
+
+.menucn {
+margin: 0 10px;
+}
+
+#cssmenu a:hover {
+  background: #000;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 0;
+}
+#cssmenu ul {
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  list-style: none;
+}
+#cssmenu > ul {
+  background: #fff;
+  background-image: url(http://www.invensense.com/images/navgr.png );
+  padding-top: 0px;
+  width: 100%;
+}
+#cssmenu > ul > li {
+  border-left: 1px solid #ddd;
+  float: left;
+  padding: 0px;
+  position: relative;
+}
+#cssmenu > ul > li:hover > a {
+  background: #fefefe;
+  border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px 4px 0 0;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+#cssmenu > ul > li a {
+  line-height: 35px;
+}
+#cssmenu > ul > li a:hover {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+#cssmenu .has-sub:hover ul {
+  display: block;
+}
+#cssmenu .has-sub a {
+  display: block;
+  position: relative;
+}
+#cssmenu .has-sub > a:after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 9px;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  margin-top: -5px;
+}
+#cssmenu .has-sub ul {
+  background: #eee;
+  border: 1px solid #dddddd;
+  display: none;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  top: 34px;
+  margin-left: -70px;
+  width: 190px;
+  z-index: 1;
+}
+#cssmenu .has-sub ul li:hover > a {
+  background: #fff;
+  color: #666;
+  border-color: #e5e5e5 transparent transparent transparent;
+
+}
+#cssmenu .has-sub ul a {
+  line-height: 160%;
+	border-bottom: 1px solid #ddd;
+  padding: 8px 0;
+}
+
+#cssmenu .has-sub .has-sub ul {
+  background: #eee;
+  left: 100%;
+  top: 0;
+  margin-left: 0;
+}
+#cssmenu .has-sub .has-sub ul a {
+  background: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+}
+#cssmenu .has-sub .has-sub ul a:after {
+  background: #fefefe;
+  background-image: none;
+}
+#cssmenu .has-sub .has-sub ul a:hover {
+  background: #fefefe;
+}
